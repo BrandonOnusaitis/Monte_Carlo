@@ -2,9 +2,9 @@
 
 This repository contains code written for simulating a 2D **[Ising Model](https://en.wikipedia.org/wiki/Ising_model)**. This model is related to studying the dipole moments of magnets on lattices, but finds relevance in the study of critical phenomena. The report, titled **Onusaitis_Brandon_FinalProjectChem444.pdf** outlines the derivation for free energy sampling of the Ising Model using markov chain monte carlo. The steps include, 
 
-1. Establish the halmiltonian for the system of interest
+1. Establish the hamiltonian for the system of interest
     1. $$E_{ising} = -\sum_{i} \sum_{j} J_{ij} \sigma_{i} \sigma_{j} - \mu \sum_{j} h_{j} \sigma_{j}$$
-2. Derive an expression to relate the free energy of a system in existing in state A given that it's prior state was B.
+2. Derive an expression to relate the free energy of a system existing in state A given that it's prior state was B.
     1. $$\log{\frac{P_{A}(\Delta E)}{P_{B}(\Delta E)}} = \beta\log{\Delta F} - \beta \Delta E$$
 3. Establish a relation that can be used to estimate $P_{i}(\Delta E)$ numerically
     1. $P_{0}^{est} = \frac{\sum_{i} H_{i}}{\sum_{i} C_{i} \frac{Q_0 (N,V,T)}{Q_i (N,V,T)} e^{-\beta V_{bias,i}}}$
